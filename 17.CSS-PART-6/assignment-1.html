@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment</title>
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 500px;
+        width: 700px;
+        background-color: aliceblue;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-gap: 10px;
+      }
+
+      .item {
+        background-color: red;
+      }
+      .one {
+        grid-column: 1/13;
+      }
+
+      .two {
+        grid-column: 1/4;
+        grid-row: 2/12;
+      }
+      .three {
+        grid-column: 4/10;
+      }
+      .four {
+        grid-column: 10/13;
+        grid-row: 2/12;
+      }
+      .five {
+        grid-column: 4/10;
+        grid-row: 3/9 span;
+      }
+
+      .six {
+        grid-column: 1/12 span;
+      }
+
+
+      @media(max-width:720px){
+        .item{
+            background-color: aqua;
+        }
+        .one{
+            grid-column:1/13;
+            
+        }
+        .two{
+            grid-column:1/13;
+            grid-row:2/3;
+        }
+        .three{
+            grid-column:1/4;
+            grid-row:3/12;
+        }
+        .four{
+            grid-row:3/12;
+            grid-column:4/13;
+
+        }
+        .six{
+          grid-column:1/4;
+        }
+        .seven{
+          grid-column:4/13;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item one"></div>
+      <div class="item two"></div>
+      <div class="item three"></div>
+      <div class="item four"></div>
+      <div class="item five"></div>
+      <div class="item six"></div>
+      <div class="item seven"></div>
+    </div>
+  </body>
+</html>

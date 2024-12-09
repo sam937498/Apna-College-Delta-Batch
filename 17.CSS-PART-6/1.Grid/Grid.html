@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .container {
+        height: 300px;
+        width: 600px;
+        background-color: black;
+        display: grid;
+        display: inline-grid;
+
+
+        /* grid-template */
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-columns: 100px 100px 100px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: auto auto auto; /*for equal division */
+        grid-template-columns: 1fr 1fr;
+        
+        /* grid-gap */
+        row-gap:10px;
+        column-gap:10px;
+        grid-gap:10px;
+
+        /* Common properties */
+        justify-items:end;
+        align-items:start;
+        place-items:center;
+        
+       
+
+
+      }
+      .items {
+        width: 100px;
+        height: 50px;
+        background-color: greenyellow;
+        border: 2px solid black;
+        text-align: center;
+      }
+      .one{
+         /* Grid Column */
+         grid-column-start:1;
+         grid-column-end:3;
+         grid-column:1/4;
+         grid-column:1/span 3;
+
+         /* Grid row */
+         grid-row-start:1;
+         grid-row-end:3;
+         grid-row:1/4;
+         grid-row:1/span 3;  
+      }
+      .two{
+        align-self:start;
+        justify-self:center;
+        place-self: start;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items one">1</div>
+      <div class="items two">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div{
+            width:200px;
+            height:50px;
+            text-align:center;
+            background-color: rgba(128, 51, 0, 0.274);
+            border:2px solid black;
+           margin: 50px  auto;
+        }
+        div:nth-of-type(2n){
+            background-color: rgba(255, 255, 0, 0.342);
+        }
+        div:nth-of-type(3n){
+            background-color: yellow;
+        }
+        /* transform-rotate */
+        #one{
+            /* transform: rotate(45deg); */
+            transform: rotate(-45deg);
+
+        }
+        #two{
+            /* transform: scale(1.5); */
+            transform: scale(0.5);
+            transform:scale(2,0.5);
+            transform:scalex(2)
+        }
+        #three{
+            transform:translate(50px,20px);
+            transform: translatex(30px);
+            
+        }
+        #four{
+            transform:skew(30deg);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- CSS Transform
+    This property lets you rotate,scale,skew,or translate an element.
+     -->
+    <section>
+        <div id="one">1 rotate</div>
+        <div id="two">2 scale</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </section>
+    
+</body>
+</html>

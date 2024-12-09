@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Semantic tags in table -->
+    <table border="black">
+      <caption>
+        Food Menu
+      </caption>
+      <thead>
+        <tr>
+          <th>Items</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frooti</td>
+          <td>10</td>
+        </tr>
+
+        <tr>
+          <td>Maza</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>25</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- rowspan and colspan -->
+    <table border="black">
+      <caption>
+        Food Menu
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Items</th>
+          <th colspan="2">Price</th>
+        </tr>
+        <tr>
+          <th>IND</th>
+          <th>USD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frooti</td>
+          <td>10</td>
+          <td>0.4</td>
+        </tr>
+
+        <tr>
+          <td>Maza</td>
+          <td>15</td>
+          <td>0.5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>25</td>
+          <td>0.9</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <!-- forms -->
+    <!-- placeholder and Labels -->
+    <!-- button,name,checkbox,Radio -->
+    <form action="/action">
+      <label for="username"> Username: </label>
+      <input type="text" id="username" placeholder="fullname" name="query" />
+      <br />
+      <label for="pass"> password: </label>
+      <input type="password" id="pass" placeholder="password" name="password" />
+      <br />
+      <label for="phone"> phone No: </label>
+      <input type="number" id="phone" placeholder="number" name="No" />
+      <br />
+      <label for="TIM"> Time: </label>
+      <input type="time" id="TIM" placeholder="time" name="time" />
+      <br />
+      <input type="checkbox" name="checkbox" id="check" />
+      <label for="check">Im 18 plus</label>
+      <br />
+      <input type="radio" name="fruit" id="apple" value="apple" />
+      <label for="apple">apple</label>
+      <input type="radio" name="fruit" id="mango" value="mango" />
+      <label for="mango">mango</label>
+      <input type="radio" name="fruit" id="banana" value="banana" />
+      <label for="banana">banana</label>
+      <br />
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+      <input type="submit" value="click me" />
+    </form>
+    <form action="https://www.youtube.com/results">
+      <input type="text" placeholder="Search in youtube" name="search_query" />
+      <button>Search</button>
+    </form>
+    <!-- select and Dropdowns -->
+     <!-- range -->
+      <!-- textarea -->
+    <form action="">
+      <select name="profession" id="profession">
+        <option selected>--Select your option--</option>
+        <option value="stu">Student</option>
+        <option value="dev">Developer</option>
+      </select>
+      <br>
+      <label for="vol">Select your volume level</label>
+      <input type="range" id="vol" min="0" max="100" name="vol" step="20" value="20">
+      <br>
+      <label for="feedback">Your feedback:</label>
+      <textarea name="feedback" id="feedback" cols="20" ></textarea>
+
+    </form>
+
+  </body>
+</html>

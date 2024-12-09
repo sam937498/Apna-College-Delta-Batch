@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      h1 {
+        background-color: yellow;
+        border: 2px solid black;
+      }
+      @media (width: 400px) {
+        h1 {
+          background-color: red;
+        }
+      }
+      @media(min-width:500px){
+        div{
+          background-color:red;
+        }
+      }
+      @media(max-width:400px){
+        div{
+          background-color:blue
+        }
+      }
+      @media (min-width:200px) and (max-width:300px){
+        p{
+          background-color:brown;
+        }
+      }
+      @media (orientation:landscape){
+          h1{
+            background-color: aliceblue;
+            color:black
+          }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+    <div style="height: 300px; width:300px"></div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime fugit, repudiandae praesentium, mollitia sint ea explicabo placeat culpa ducimus cumque ab fuga cum voluptatibus omnis iusto, aliquam delectus perferendis fugiat?</p>
+  </body>
+</html>

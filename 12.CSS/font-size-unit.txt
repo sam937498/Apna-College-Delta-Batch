@@ -1,0 +1,6 @@
+Font-size units in css
+
+absolute{px,pt,pc,cm,mm,in}
+Relative{%,em,rem,ch,vh,vw}
+
+96px = 1 inch

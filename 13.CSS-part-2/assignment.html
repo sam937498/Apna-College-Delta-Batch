@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Assignment</title>
+    <style>
+        h1#mainTopic{
+            color:blue;
+        }
+        *{
+            text-align:center;
+            font-family:Georgia;
+            background-color:cornflowerblue;
+            color:white;
+        }
+        div button{
+            background-color:purple;
+            color:azure;
+        }
+        div button:hover{
+            background-color:yellow;
+            color:blue;
+        }
+        p:nth-of-type(2n+1){
+            color:yellow;
+
+        }
+        h1:first-letter{
+            color:red;
+        }
+        button:active{
+            color:green;
+        }   
+        input:checked + label {
+            color:darkgreen;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="mainTopic">CSS Practice</h1>
+    <h3>Let's learn about selector</h3>
+    <!-- paragraph1 -->
+    <p>Let's learn about selector</p>
+    <!-- paragrapgh2 -->
+    <p>There are multiple selectors in css.</p>
+    <!-- paragraph3 -->
+    <p>And we can also combine these too.</p>
+    <div>
+      <h5>Did you like the practice set?</h5>
+      <input type="checkbox" id="yes" />
+      <label for="yes">yes</label>
+      <br />
+      <button>Learn next!</button>
+    </div>
+  </body>
+</html>

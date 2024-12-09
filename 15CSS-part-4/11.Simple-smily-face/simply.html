@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simply face</title>
+    <style>
+      .parent {
+        height: 400px;
+        width: 400px;
+        background-color: rebeccapurple;
+        border-radius: 50%;
+      }
+      .mouth {
+        width: 200px;
+        height: 75px;
+        background-color: brown;
+        border-radius: 0 0 50px 50px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+      }
+
+      .eyes1,.eyes2{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        background-color:black;
+        display:inline-block;
+        position:absolute;
+        left:100px;
+        top:100px;
+      }
+      .eyes2{
+        left:250px;
+      }
+        
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="eyes">
+        <div class="eyes1"></div>
+        <div class="eyes2"></div>
+      </div>
+      <div class="mouth"></div>
+    </div>
+  </body>
+</html>

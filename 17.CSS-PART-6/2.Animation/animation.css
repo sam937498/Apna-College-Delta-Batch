@@ -1,0 +1,41 @@
+.box {
+  height: 100px;
+  width: 300px;
+  background-color: rgba(255, 192, 203, 0.583);
+  animation-name: fontAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+
+  /* animation shorthand */
+  animation: colorAnimation 3s ease-in 0s infinite alternate;
+}
+
+@keyframes fontAnimation {
+  from {
+    font-size: 20px;
+    width: 110px;
+  }
+  to {
+    font-size: 40px;
+    width: 400px;
+  }
+}
+
+@keyframes colorAnimation{
+    0%{
+        background-color:red;
+    }
+    50%{
+        background-color:yellow;
+    }
+    80%{
+      background-color:aquamarine;
+    }
+    100%{
+        background-color:green; 
+    }
+
+}
